@@ -48,39 +48,39 @@
 		compatible = "gpio-leds";
 
 		power_led: power_red {
-			label = "led_power";
+			label = "red_power";
 			gpios = <&pio 12 GPIO_ACTIVE_LOW>;
 			default-state = "on";
 			linux,default-trigger = "default-on";
 		};
 
 		system_led: wan_green {
-			label = "led_wan_green";
+			label = "green:wan";
 			gpios = <&pio 6 GPIO_ACTIVE_LOW>;
 		};
 
 		wan_red {
-			label = "led_wan_red";
+			label = "red:wan";
 			gpios = <&pio 5 GPIO_ACTIVE_LOW>;
 		};
 
 		mesh_blue {
-			label = "led_mesh";
+			label = "blue:mesh";
 			gpios = <&pio 13 GPIO_ACTIVE_LOW>;
 		};
 
 		wifi_green {
-			label = "led_wifi";
+			label = "green:wifi";
 			gpios = <&pio 34 GPIO_ACTIVE_LOW>;
 		};
 
 		internet_blue {
-			label = "led_internet";
+			label = "blue:internet";
 			gpios = <&pio 11 GPIO_ACTIVE_LOW>;
 		};
 
 		all_ctrl {
-			label = "ctrl_led_all";
+			label = "ctrl_all";
 			gpios = <&pio 8 GPIO_ACTIVE_LOW>;
 			default-state = "on";
 			linux,default-trigger = "default-on";
